@@ -1,2 +1,11 @@
-<h1>Hola Amigos</h1>
+<div>
+  <h1 [hidden]="nombreClase">Hola Amigos</h1>
 
+  <p>Nombre: {{nombre}}</p>
+  <p>Apellido: {{apellido}}</p>
+  <p>Edad: {{edad}}</p>
+  <p>Sueldo: {{sueldo | currency}}</p>
+  <p>Fecha de Nacimiento: {{fechaNacimiento | date:'yy/MM/dd'}}</p>
+
+  <button>{{nombreBoton}}</button>
+</div>
