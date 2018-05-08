@@ -25,11 +25,15 @@ export class AppModule {
   nombreClase = 'sa-titulo';
 
   cambiarClaseDeTitulo(){
-    const nombreClaseEsTitulo = this.nombreClase === 'sa-titulo';
+    const nombreClaseEsTitulo = this.nombreClase === "sa-titulo";
     if(nombreClaseEsTitulo){
       this.nombreClase='sa-subtitulo';
     }else{
       this.nombreClase='sa-titulo';
     }
+  }
+  aplicarClase(  valorInput: string){
+    this.nombreClase = valorInput;
+    console.log(this.nombreClase);
   }
 }

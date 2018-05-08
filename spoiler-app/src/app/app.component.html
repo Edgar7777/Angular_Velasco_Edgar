@@ -1,5 +1,8 @@
 <div>
+
   <h1 [hidden]="nombreClase">Hola Amigos</h1>
+
+  <input type="text" #textoImput>
 
   <p>Nombre: {{nombre}}</p>
   <p>Apellido: {{apellido}}</p>
@@ -7,5 +10,9 @@
   <p>Sueldo: {{sueldo | currency}}</p>
   <p>Fecha de Nacimiento: {{fechaNacimiento | date:'yy/MM/dd'}}</p>
 
-  <button>{{nombreBoton}}</button>
+  <button (click)="cambiarClaseDeTitulo()" )>{{nombreBoton}}</button>
+
+  <button (click)="aolicarClase(textoImput)">
+
+  </button>
 </div>
