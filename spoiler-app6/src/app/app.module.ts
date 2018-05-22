@@ -7,6 +7,7 @@ import { PeliculaBannerComponent } from './peliculas/pelicula-banner/pelicula-ba
 import { GrillaBannerComponent } from './grilla/grilla-banner/grilla-banner.component';
 import { MenuBannerComponent } from './menu/menu-banner/menu-banner.component';
 import { BuscadorBannerComponent } from './buscador/buscador-banner/buscador-banner.component';
+import { FooterBannerComponent } from './footer/footer-banner/footer-banner.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BuscadorBannerComponent } from './buscador/buscador-banner/buscador-ban
     PeliculaBannerComponent,
     GrillaBannerComponent,
     MenuBannerComponent,
-    BuscadorBannerComponent
+    BuscadorBannerComponent,
+    FooterBannerComponent
   ],
   imports: [
     BrowserModule,
