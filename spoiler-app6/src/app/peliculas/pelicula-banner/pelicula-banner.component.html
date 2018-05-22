@@ -1,10 +1,8 @@
 <div class="container">
   <div class="row">
-    <div class="col-lg-6"
-    *ngFor="let peliculaProximamente of arregloPeliculasProximamente">
+    <div class="col-lg-6" *ngFor="let peliculaProximamente of arregloPeliculasProximamente">
 
-      <div class="sa-fondo-pelicula-banner sa-color-letras-pelicula-banner"
-       [style.background-image]="'url('+peliculaProximamente.urlImagen+')'">
+      <div class="sa-fondo-pelicula-banner sa-color-letras-pelicula-banner" [style.background-image]="'url('+peliculaProximamente.urlImagen+')'">
 
         <div class="sa-espaciado"></div>
 
@@ -13,503 +11,40 @@
         <h1>{{peliculaProximamente.nombrePelicula}}</h1>
         <p>{{peliculaProximamente.descripcionPelicula}}</p>
       </div>
-
     </div>
-
-    <!-- <div class="col-lg-6">
-
-      <div class="sa-fondo-pelicula-banner sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen+')'">
-        <div class="sa-espaciado"></div>
-
-        <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-        <h1>{{nombrePelicula}}</h1>
-        <p>{{descripcionPelicula}}</p>
-      </div>
-
-    </div> -->
   </div>
 </div>
 
 <div style="text-align:center" class="container">
   <div class="row">
-    <div class="col-sm-3"
-     *ngFor="let peliculaEstreno of arregloPeliculasEstreno">
+    <div class="col-sm-3" *ngFor="let peliculaEstreno of arregloPeliculasEstreno">
 
-        <div class="sa-fondo-pelicula-banner-2 sa-color-letras-pelicula-banner"
-         [style.background-image]="'url('+peliculaEstreno.urlImagen+')'">
+      <div class="sa-fondo-pelicula-banner-2 sa-color-letras-pelicula-banner" [style.background-image]="'url('+peliculaEstreno.urlImagen+')'">
 
-          <div class="sa-espaciado"></div>
-
-          <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-          <h1>{{peliculaEstreno.nombrePelicula}}</h1>
-          <p>{{peliculaEstreno.descripcionPelicula}}</p>
-        </div>
-
-      <!-- <div class="sa-fondo-pelicula-banner-2 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen1+')'">
         <div class="sa-espaciado"></div>
 
         <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
 
-        <h1>{{nombrePelicula}}</h1>
-        <p>{{descripcionPelicula}}</p>
-      </div> -->
-<!--
-    </div>
-    <div class="col-sm-3">
-
-      <div class="sa-fondo-pelicula-banner-2 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen1+')'">
-        <div class="sa-espaciado"></div>
-
-        <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-        <h1>{{nombrePelicula}}</h1>
-        <p>{{descripcionPelicula}}</p>
-      </div>
-
-    </div>
-    <div class="col-sm-3">
-
-      <div class="sa-fondo-pelicula-banner-2 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen1+')'">
-        <div class="sa-espaciado"></div>
-
-        <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-        <h1>{{nombrePelicula}}</h1>
-        <p>{{descripcionPelicula}}</p>
-      </div>
-
-    </div>
-    <div class="col-sm-3">
-
-      <div class="sa-fondo-pelicula-banner-2 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen1+')'">
-        <div class="sa-espaciado"></div>
-
-        <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-        <h1>{{nombrePelicula}}</h1>
-        <p>{{descripcionPelicula}}</p>
-      </div>
-
-    </div>
-  </div> -->
-</div>
-
-<br />
-
-<div class="container">
-  ULTIMAS PELICULAS AGREGADOS
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="row">
-
-            <div class="col-sm-3" *ngFor = "let ultimaPeliculaAgregada of arregloPeliculasAgregadasUltimamenteIzquierda">
-              <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+ultimaPeliculaAgregada.urlImagen+')'">
-                <div class="sa-espaciado"></div>
-              </div>
-            </div>
-
-            <!-- <div class="col-sm-3">
-              <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                <div class="sa-espaciado"></div>
-
-                <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                <h1>{{nombrePelicula}}</h1>
-                <p>{{descripcionPelicula}}</p>
-              </div>
-            </div> -->
-
-            <!-- <div class="col-sm-3">
-              <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                <div class="sa-espaciado"></div>
-
-                <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                <h1>{{nombrePelicula}}</h1>
-                <p>{{descripcionPelicula}}</p>
-              </div>
-            </div> -->
-
-            <!-- <div class="col-sm-3">
-              <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                <div class="sa-espaciado"></div>
-
-                <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                <h1>{{nombrePelicula}}</h1>
-                <p>{{descripcionPelicula}}</p>
-              </div>
-            </div> -->
-
-          </div>
-        </div>
-
-
-        <div class="col-sm-6">
-          <div class="row">
-
-            <div class="col-sm-3" *ngFor = "let ultimaPeliculaAgregada of arregloPeliculasAgregadasUltimamenteDerecha">
-              <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+ultimaPeliculaAgregada.urlImagen+')'">
-                <div class="sa-espaciado"></div>
-              </div>
-            </div>
-
-            <!-- <div class="col-sm-3">
-              <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                <div class="sa-espaciado"></div>
-
-                <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                <h1>{{nombrePelicula}}</h1>
-                <p>{{descripcionPelicula}}</p>
-              </div>
-            </div> -->
-
-            <!-- <div class="col-sm-3">
-              <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                <div class="sa-espaciado"></div>
-
-                <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                <h1>{{nombrePelicula}}</h1>
-                <p>{{descripcionPelicula}}</p>
-              </div>
-            </div> -->
-
-            <!-- <div class="col-sm-3">
-              <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                <div class="sa-espaciado"></div>
-
-                <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                <h1>{{nombrePelicula}}</h1>
-                <p>{{descripcionPelicula}}</p>
-              </div>
-            </div> -->
-
-          </div>
-        </div>
+        <h1>{{peliculaEstreno.nombrePelicula}}</h1>
+        <p>{{peliculaEstreno.descripcionPelicula}}</p>
       </div>
     </div>
-  </div>
-
-  <br />
-
-  <div class="container1">
-    ULTIMAS SERIES AGREGADAS
-    <!-- <div class="row">
-      <div class="col-sm-12">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="row">
-
-              <div class="col-sm-3">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                  <div class="sa-espaciado"></div>
-
-
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                  <div class="sa-espaciado"></div>
-
-
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                  <div class="sa-espaciado"></div>
-
-
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                  <div class="sa-espaciado"></div>
-
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="row">
-
-              <div class="col-sm-3">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                  <div class="sa-espaciado"></div>
-
-
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                  <div class="sa-espaciado"></div>
-
-
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                  <div class="sa-espaciado"></div>
-
-
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                  <div class="sa-espaciado"></div>
-
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="row">
-
-              <div class="col-sm-3" *ngFor = "let ultimaPeliculaAgregada of arregloPeliculasAgregadasUltimamenteIzquierda">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+ultimaPeliculaAgregada.urlImagen+')'">
-                  <div class="sa-espaciado"></div>
-                </div>
-              </div>
-
-              <!-- <div class="col-sm-3">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                  <div class="sa-espaciado"></div>
-
-                  <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                  <h1>{{nombrePelicula}}</h1>
-                  <p>{{descripcionPelicula}}</p>
-                </div>
-              </div> -->
-
-              <!-- <div class="col-sm-3">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                  <div class="sa-espaciado"></div>
-
-                  <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                  <h1>{{nombrePelicula}}</h1>
-                  <p>{{descripcionPelicula}}</p>
-                </div>
-              </div> -->
-
-              <!-- <div class="col-sm-3">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                  <div class="sa-espaciado"></div>
-
-                  <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                  <h1>{{nombrePelicula}}</h1>
-                  <p>{{descripcionPelicula}}</p>
-                </div>
-              </div> -->
-
-            </div>
-          </div>
-
-
-          <div class="col-sm-6">
-            <div class="row">
-
-              <div class="col-sm-3" *ngFor = "let ultimaPeliculaAgregada of arregloPeliculasAgregadasUltimamenteDerecha">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+ultimaPeliculaAgregada.urlImagen+')'">
-                  <div class="sa-espaciado"></div>
-                </div>
-              </div>
-
-              <!-- <div class="col-sm-3">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                  <div class="sa-espaciado"></div>
-
-                  <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                  <h1>{{nombrePelicula}}</h1>
-                  <p>{{descripcionPelicula}}</p>
-                </div>
-              </div> -->
-
-              <!-- <div class="col-sm-3">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                  <div class="sa-espaciado"></div>
-
-                  <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                  <h1>{{nombrePelicula}}</h1>
-                  <p>{{descripcionPelicula}}</p>
-                </div>
-              </div> -->
-
-              <!-- <div class="col-sm-3">
-                <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                  <div class="sa-espaciado"></div>
-
-                  <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                  <h1>{{nombrePelicula}}</h1>
-                  <p>{{descripcionPelicula}}</p>
-                </div>
-              </div> -->
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
 
     <br />
 
-    <div class="container2">
-      ULTIMOS CAPITULOS AGREGADOS
-      <!-- <div class="row">
-        <div class="col-sm-12">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="row">
-
-                <div class="col-sm-3">
-                  <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                    <div class="sa-espaciado"></div>
-
-
-                  </div>
-                </div>
-
-                <div class="col-sm-3">
-                  <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                    <div class="sa-espaciado"></div>
-
-
-                  </div>
-                </div>
-
-                <div class="col-sm-3">
-                  <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                    <div class="sa-espaciado"></div>
-
-
-                  </div>
-                </div>
-
-                <div class="col-sm-3">
-                  <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                    <div class="sa-espaciado"></div>
-
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="row">
-
-                <div class="col-sm-3">
-                  <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                    <div class="sa-espaciado"></div>
-
-
-
-
-                  </div>
-                </div>
-
-                <div class="col-sm-3">
-                  <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                    <div class="sa-espaciado"></div>
-
-
-
-
-                  </div>
-                </div>
-
-                <div class="col-sm-3">
-                  <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                    <div class="sa-espaciado"></div>
-
-                  </div>
-                </div>
-
-                <div class="col-sm-3">
-                  <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                    <div class="sa-espaciado"></div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+    <div class="container">
+      ULTIMAS PELICULAS AGREGADOS
       <div class="row">
         <div class="col-sm-12">
           <div class="row">
             <div class="col-sm-6">
               <div class="row">
 
-                <div class="col-sm-3" *ngFor = "let ultimaPeliculaAgregada of arregloPeliculasAgregadasUltimamenteIzquierda">
+                <div class="col-sm-3" *ngFor="let ultimaPeliculaAgregada of arregloPeliculasAgregadasUltimamenteIzquierda">
                   <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+ultimaPeliculaAgregada.urlImagen+')'">
                     <div class="sa-espaciado"></div>
                   </div>
                 </div>
-
-                <!-- <div class="col-sm-3">
-                  <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                    <div class="sa-espaciado"></div>
-
-                    <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                    <h1>{{nombrePelicula}}</h1>
-                    <p>{{descripcionPelicula}}</p>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-sm-3">
-                  <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                    <div class="sa-espaciado"></div>
-
-                    <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                    <h1>{{nombrePelicula}}</h1>
-                    <p>{{descripcionPelicula}}</p>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-sm-3">
-                  <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                    <div class="sa-espaciado"></div>
-
-                    <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                    <h1>{{nombrePelicula}}</h1>
-                    <p>{{descripcionPelicula}}</p>
-                  </div>
-                </div> -->
-
               </div>
             </div>
 
@@ -517,47 +52,82 @@
             <div class="col-sm-6">
               <div class="row">
 
-                <div class="col-sm-3" *ngFor = "let ultimaPeliculaAgregada of arregloPeliculasAgregadasUltimamenteDerecha">
+                <div class="col-sm-3" *ngFor="let ultimaPeliculaAgregada of arregloPeliculasAgregadasUltimamenteDerecha">
                   <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+ultimaPeliculaAgregada.urlImagen+')'">
                     <div class="sa-espaciado"></div>
                   </div>
                 </div>
-
-                <!-- <div class="col-sm-3">
-                  <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                    <div class="sa-espaciado"></div>
-
-                    <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                    <h1>{{nombrePelicula}}</h1>
-                    <p>{{descripcionPelicula}}</p>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-sm-3">
-                  <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                    <div class="sa-espaciado"></div>
-
-                    <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                    <h1>{{nombrePelicula}}</h1>
-                    <p>{{descripcionPelicula}}</p>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-sm-3">
-                  <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen2+')'">
-                    <div class="sa-espaciado"></div>
-
-                    <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
-
-                    <h1>{{nombrePelicula}}</h1>
-                    <p>{{descripcionPelicula}}</p>
-                  </div>
-                </div> -->
-
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <br />
+
+      <div class="container1">
+        ULTIMAS SERIES AGREGADAS
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="row">
+
+                  <div class="col-sm-3" *ngFor="let ultimaPeliculaAgregada of arregloPeliculasAgregadasUltimamenteIzquierda">
+                    <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+ultimaPeliculaAgregada.urlImagen+')'">
+                      <div class="sa-espaciado"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-sm-6">
+                <div class="row">
+
+                  <div class="col-sm-3" *ngFor="let ultimaPeliculaAgregada of arregloPeliculasAgregadasUltimamenteDerecha">
+                    <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+ultimaPeliculaAgregada.urlImagen+')'">
+                      <div class="sa-espaciado"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <br />
+
+        <div class="container2">
+          ULTIMOS CAPITULOS AGREGADOS
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="row">
+
+                    <div class="col-sm-3" *ngFor="let ultimaPeliculaAgregada of arregloPeliculasAgregadasUltimamenteIzquierda">
+                      <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+ultimaPeliculaAgregada.urlImagen+')'">
+                        <div class="sa-espaciado"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-sm-6">
+                  <div class="row">
+
+                    <div class="col-sm-3" *ngFor="let ultimaPeliculaAgregada of arregloPeliculasAgregadasUltimamenteDerecha">
+                      <div class="sa-fondo-pelicula-banner-3 sa-color-letras-pelicula-banner" [style.background-image]="'url('+ultimaPeliculaAgregada.urlImagen+')'">
+                        <div class="sa-espaciado"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
