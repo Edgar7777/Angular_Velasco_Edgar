@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
 import { PeliculaBannerComponent } from './peliculas/pelicula-banner/pelicula-banner.component';
 import { GrillaBannerComponent } from './grilla/grilla-banner/grilla-banner.component';
+import { MenuBannerComponent } from './menu/menu-banner/menu-banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PeliculaBannerComponent,
-    GrillaBannerComponent
+    GrillaBannerComponent,
+    MenuBannerComponent
   ],
   imports: [
     BrowserModule,
