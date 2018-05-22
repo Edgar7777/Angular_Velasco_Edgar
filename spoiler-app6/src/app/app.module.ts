@@ -2,15 +2,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import {FormsModule} from "@angular/forms";
+import { PeliculaBannerComponent } from './peliculas/pelicula-banner/pelicula-banner.component';
+import { GrillaBannerComponent } from './grilla/grilla-banner/grilla-banner.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PeliculaBannerComponent,
+    GrillaBannerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  //clase ='';
+}
