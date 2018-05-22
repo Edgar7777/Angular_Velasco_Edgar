@@ -6,13 +6,15 @@ import {FormsModule} from "@angular/forms";
 import { PeliculaBannerComponent } from './peliculas/pelicula-banner/pelicula-banner.component';
 import { GrillaBannerComponent } from './grilla/grilla-banner/grilla-banner.component';
 import { MenuBannerComponent } from './menu/menu-banner/menu-banner.component';
+import { BuscadorBannerComponent } from './buscador/buscador-banner/buscador-banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PeliculaBannerComponent,
     GrillaBannerComponent,
-    MenuBannerComponent
+    MenuBannerComponent,
+    BuscadorBannerComponent
   ],
   imports: [
     BrowserModule,
