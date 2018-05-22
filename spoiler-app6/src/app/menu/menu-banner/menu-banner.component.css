@@ -10,5 +10,9 @@
   -webkit-filter: grayscale(100%);
   filter: grayscale(34%);
   width: 1200px;
-  height:30px;
+  height:50px;
+}
+
+.sa-color-letras-menu-banner {
+  color: #fff;
 }
